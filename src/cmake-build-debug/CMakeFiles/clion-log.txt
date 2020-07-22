@@ -1,0 +1,29 @@
+"/Users/kevincraig/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/201.6668.126/CLion.app/Contents/bin/cmake/mac/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/kevincraig/Prusa/PrusaSlicer/src
+-- Miniz NOT found in system, using bundled version...
+-- qhull Version: 7.2.0 (static linking)
+-- IGL NOT found, using bundled version...
+CMake Error at libslic3r/CMakeLists.txt:4 (include):
+  include could not find load file:
+
+    PrecompiledHeader
+
+
+CMake Error at libslic3r/CMakeLists.txt:248 (find_package):
+  By not providing "FindCGAL.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "CGAL", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "CGAL" with any of
+  the following names:
+
+    CGALConfig.cmake
+    cgal-config.cmake
+
+  Add the installation prefix of "CGAL" to CMAKE_PREFIX_PATH or set
+  "CGAL_DIR" to a directory containing one of the above files.  If "CGAL"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/Users/kevincraig/Prusa/PrusaSlicer/src/cmake-build-debug/CMakeFiles/CMakeOutput.log".

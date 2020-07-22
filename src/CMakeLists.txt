@@ -97,7 +97,7 @@ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/platform/osx/Info.plist.in ${CMAKE_CU
 if (WIN32)
     add_library(PrusaSlicer SHARED PrusaSlicer.cpp PrusaSlicer.hpp)
 else ()
-    add_executable(PrusaSlicer PrusaSlicer.cpp PrusaSlicer.hpp)
+    add_executable(PrusaSlicer PrusaSlicer.cpp PrusaSlicer.hpp slic3r/Utils/RepetierServer.cpp slic3r/Utils/RepetierServer.hpp)
 endif ()
 
 if (MINGW)

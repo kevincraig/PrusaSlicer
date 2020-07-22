@@ -16,6 +16,7 @@
 #include "Duet.hpp"
 #include "FlashAir.hpp"
 #include "AstroBox.hpp"
+#include "RepetierServer.hpp"
 #include "../GUI/PrintHostDialogs.hpp"
 
 namespace fs = boost::filesystem;
@@ -47,6 +48,7 @@ PrintHost* PrintHost::get_print_host(DynamicPrintConfig *config)
             case htDuet:      return new Duet(config);
             case htFlashAir:  return new FlashAir(config);
             case htAstroBox:  return new AstroBox(config);
+            case htRepetierServer: return new RepetierServer(config);
             default:          return nullptr;
         }
     } else {
